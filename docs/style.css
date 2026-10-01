@@ -1,0 +1,249 @@
+/* ------------------------------
+   BASIC RESET
+-------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------
+   BODY
+-------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   NAVIGATION
+-------------------------------- */
+
+nav {
+    background-color: #1e293b;
+
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+
+/* ------------------------------
+   HERO SECTION
+-------------------------------- */
+
+.hero {
+    background-color: #e0f2fe;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+
+    color: #0f172a;
+
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+
+    color: #475569;
+}
+
+
+/* ------------------------------
+   BUTTON
+-------------------------------- */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 25px;
+
+    background-color: #0284c7;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #0369a1;
+}
+
+
+/* ------------------------------
+   GENERAL SECTION
+-------------------------------- */
+
+.section {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+.section h2 {
+    text-align: center;
+
+    font-size: 32px;
+
+    color: #0f172a;
+
+    margin-bottom: 40px;
+}
+
+
+/* ------------------------------
+   ABOUT
+-------------------------------- */
+
+.about-text {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* ------------------------------
+   SERVICE CARDS
+-------------------------------- */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #0284c7;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+}
+
+
+/* ------------------------------
+   CONTACT
+-------------------------------- */
+
+.contact {
+    background-color: #e2e8f0;
+
+    max-width: none;
+
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 25px;
+}
+
+.contact p {
+    font-size: 18px;
+
+    margin: 8px;
+}
+
+
+/* ------------------------------
+   FOOTER
+-------------------------------- */
+
+footer {
+    background-color: #1e293b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* ------------------------------
+   MOBILE RESPONSIVE
+-------------------------------- */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
